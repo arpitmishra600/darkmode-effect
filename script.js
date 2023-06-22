@@ -17,6 +17,9 @@ document.getElementById("btn").addEventListener("click",()=>{
         setTimeout(() => {
             getbyid("celestialid","slide-out-fwd-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both")
         }, 1800);
+        setTimeout(() => {
+            document.getElementById('contid').classList='container darkcont';
+        }, 2000);
         anm_clr("entbarid1")
         flag=false;
     }
@@ -25,6 +28,9 @@ document.getElementById("btn").addEventListener("click",()=>{
         setTimeout(() => {
             getbyid("celestialid","bounce-out-bottom 1.5s both")
         }, 500);
+        setTimeout(() => {
+            document.getElementById('contid').classList='container lightcont';
+        }, 400);
         flag=true;
     }
    

@@ -14,11 +14,20 @@ body{
 .container{
     width: 100vw;
     height: 100vh;
-    border: 0.5px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.darkcont{
+    transition: all 0.4s;
+    background: black;
+    color: white;
+}
+.lightcont{
+    transition: all 0.4s;
+    background: white;
+    color: black;
 }
 .entbar{
     height: 0.5px;
@@ -37,6 +46,11 @@ body{
 #btn:hover{
     cursor: pointer;
 }
+.celestial{
+    height: 145px;
+    width: 150px;
+    border-radius: 50%;
+}
 @keyframes scale-up-hor-center {
     0% {
         width: 0px;
@@ -52,80 +66,110 @@ body{
     }
 }
   
-.celestial{
-    height: 100px;
-    width: 100px;
-    background-color: green;
-}
+
 @keyframes bounce-in-top {
     0% {
+        background: url("./moon.jpg");
+        background-size: cover;
       transform: translateY(-250px);
       animation-timing-function: ease-in;
       opacity: 0;
     }
     38% {
+        background: url("./moon.jpg");
+        background-size: cover;
       transform: translateY(0);
       animation-timing-function: ease-out;
       opacity: 1;
     }
     55% {
+        background: url("./moon.jpg");
+        background-size: cover;
       transform: translateY(-65px);
       animation-timing-function: ease-in;
     }
     72% {
+        background: url("./moon.jpg");
+        background-size: cover;
       transform: translateY(0);
       animation-timing-function: ease-out;
     }
     81% {
+        background: url("./moon.jpg");
+        background-size: cover;
       transform: translateY(-28px);
       animation-timing-function: ease-in;
     }
     90% {
+        background: url("./moon.jpg");
+        background-size: cover;
       transform: translateY(0);
       animation-timing-function: ease-out;
     }
     95% {
+        background: url("./moon.jpg");
+        background-size: cover;
       transform: translateY(-8px);
       animation-timing-function: ease-in;
     }
     100% {
+        background: url("./moon.jpg");
+        background-size: cover;
       transform: translateY(0);
       animation-timing-function: ease-out;
     }
   }
   @keyframes bounce-out-bottom {
     0% {
+        background: url("./sun.jpg");
+        background-size: cover;
       transform: translateY(0);
       animation-timing-function: ease-out;
     }
     5% {
+        background: url("./sun.jpg");
+        background-size: cover;
       transform: translateY(30px);
       animation-timing-function: ease-in;
     }
     15% {
+        background: url("./sun.jpg");
+        background-size: cover;
       transform: translateY(0);
       animation-timing-function: ease-out;
     }
     25% {
+        background: url("./sun.jpg");
+        background-size: cover;
       transform: translateY(38px);
       animation-timing-function: ease-in;
     }
     38% {
+        background: url("./sun.jpg");
+        background-size: cover;
       transform: translateY(0);
       animation-timing-function: ease-out;
     }
     52% {
+        background: url("./sun.jpg");
+        background-size: cover;
       transform: translateY(75px);
       animation-timing-function: ease-in;
     }
     70% {
+        background: url("./sun.jpg");
+        background-size: cover;
       transform: translateY(0);
       animation-timing-function: ease-out;
     }
     85% {
+        background: url("./sun.jpg");
+        background-size: cover;
       opacity: 1;
     }
     100% {
+        background: url("./sun.jpg");
+        background-size: cover;
       transform: translateY(300px);
       opacity: 0;
     }
@@ -133,23 +177,31 @@ body{
   
   @keyframes slide-out-fwd-center {
     0% {
+        background: url("./moon.jpg");
+        background-size: cover;
         opacity: 1;
     }
     100% {
-       height: 1000px;
-       width: 1000px;
+        background: url("./moon.jpg");
+        background-size: cover;
+       height: 2000px;
+       width: 2000px;
         opacity: 0;
         z-index: -1;
     }
   }
   @keyframes slide-in-fwd-center {
     0% {
-        height: 1000px;
-        width: 1000px;
+        background: url("./sun.jpg");
+        background-size: cover;
+        height: 2000px;
+        width: 2000px;
          opacity: 0;
          z-index: 1;
     }
     100% {
+        background: url("./sun.jpg");
+        background-size: cover;
        height: 100px;
        width: 100px;
        z-index: -1;
